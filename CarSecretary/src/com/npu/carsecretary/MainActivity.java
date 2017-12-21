@@ -147,8 +147,8 @@ public class MainActivity extends Activity implements OnClickListener,
 		initStaticMenus();
 		initViews();
 
-		// String param = "appid=53c4c169,lib_name=libmsc_cfl_1102.so";
-		SpeechUtility.createUtility(this, SpeechConstant.APPID + "=57f4e6eb");
+		// String param = "appid=你的key,lib_name=libmsc_cfl_1102.so";
+		SpeechUtility.createUtility(this, SpeechConstant.APPID + "=你的key");
 
 		// 设置讯飞语音合成
 		mTts = SpeechSynthesizer.createSynthesizer(this, null);
