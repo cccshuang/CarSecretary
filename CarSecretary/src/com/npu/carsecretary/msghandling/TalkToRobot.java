@@ -12,7 +12,7 @@ public class TalkToRobot {
 	
 	public static String receiveMsg(String sendMsg) throws IOException{
 	      //接入机器人，输入问题
-		 String APIKEY = "3cecabeb03084b3ea66a68aecf9cc541";
+		 String APIKEY = "你的key";
 	        String INFO = URLEncoder.encode(sendMsg, "utf-8");//这里可以输入问题
 	        String getURL = "http://www.tuling123.com/openapi/api?key=" + APIKEY + "&info=" + INFO;
 	        URL getUrl = new URL(getURL);
