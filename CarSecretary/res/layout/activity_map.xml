@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mymap.MainActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/map_1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_above="@+id/map_2"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+       android:textSize="20dp"
+        android:text="普通"
+        android:textColor="@color/gray" />
+
+    <Button
+        android:id="@+id/map_3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="53dp"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:text="实时(off)" 
+        android:textColor="@color/gray"/>
+
+   <!-- <EditText
+        android:id="@+id/edittext_didian"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="默认为当前所在省"/>
+
+    <Button
+        android:id="@+id/bt_chaxun"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="提交" /> -->
+
+    <Button
+        android:id="@+id/map_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_3"
+        android:layout_toRightOf="@+id/map_1"
+        android:background="#ffffff"
+       android:textSize="20dp"
+        android:text="卫星" 
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/myloction_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+       android:layout_above="@+id/map_2"
+       android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:text="我的位置" 
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/bt_moni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_3"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:text="模拟导航" 
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/bt_zhenshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/map_3"
+        android:layout_alignBottom="@+id/map_3"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:text="真实导航" 
+        android:textColor="@color/gray"/>
+
+</RelativeLayout>

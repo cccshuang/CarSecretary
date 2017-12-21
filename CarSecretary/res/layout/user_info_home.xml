@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="com.example.user.UserHomeInfo" >
+
+    <include
+        layout="@layout/header_userinfo" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="80dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/user_info_home_dettxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="详细"
+            android:textColor="#ff222222"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/user_info_home_detetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_info_home_dettxt"
+            android:ellipsize="end"
+            android:hint="请输入单元/楼层/门牌号等"
+            android:inputType="textPostalAddress"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/user_info_home_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="33dp"
+        android:background="#56abe4"
+        android:text="保存"
+        android:textColor="#fff" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="28dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/user_info_home_adstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="地址"
+            android:textColor="#ff222222"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/user_info_home_adsetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_info_home_adstxt"
+            android:ellipsize="end"
+            android:hint="请输入小区/大厦/街道等地标"
+            android:inputType="textPostalAddress"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

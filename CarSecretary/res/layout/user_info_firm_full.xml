@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="com.example.user.UserFirmInfoFull" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header_userinfo" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="115dip"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dip"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user_info_firm_full_dettxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dip"
+            android:gravity="center"
+            android:textColor="#b5b5b5"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/user_info_firm_full_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="修改"
+            android:textColor="#505050"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/user_info_firm_full_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@id/user_info_firm_full_edit"
+            android:text="删除"
+            android:textColor="#505050"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/user_info_firm_full_adstxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:textColor="#0099FF"
+            android:textSize="24.0dip" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

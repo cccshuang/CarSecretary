@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="com.example.user.UserFirmInfo" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header_userinfo" />
+
+    <Button
+        android:id="@+id/user_info_firm_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="28dp"
+        android:background="#56abe4"
+        android:text="保存"
+        android:textColor="#fff" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_firm_rlt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="24dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/user_info_firm_dettxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="详细"
+            android:textColor="#ff222222"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/user_info_firm_detetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_info_firm_dettxt"
+            android:ellipsize="end"
+            android:hint="请输入单元/楼层/门牌号等"
+            android:inputType="textPostalAddress"
+            android:textSize="15.0dip" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_info_firm_rlt"
+        android:layout_marginTop="14dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/user_info_firm_adstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="地址"
+            android:textColor="#ff222222"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/user_info_firm_adsetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_info_firm_adstxt"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="请输入公司/大厦/街道等地标"
+            android:inputType="textPostalAddress"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="com.example.user.UserCarInfo" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header_userinfo" />
+
+    <RelativeLayout
+        android:id="@+id/user_info_car_rlt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="16dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/user_info_car_adstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:text="车牌号码"
+            android:textColor="#ff222222"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/user_info_car_adsetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_info_car_adstxt"
+            android:ellipsize="end"
+            android:hint="请输入车牌号码,如：冀B72266"
+            android:inputType="textPostalAddress"
+            android:textSize="15.0dip" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+     <Button
+         android:id="@+id/user_info_car_btn"
+         android:layout_width="fill_parent"
+         android:layout_height="44dip"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/user_info_car_rlt"
+         android:layout_marginTop="74dp"
+         android:background="#56abe4"
+         android:text="保存"
+         android:textColor="#fff" />
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="40dip"
+         android:layout_alignBottom="@+id/user_info_car_btn"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="65dp"
+         android:background="#fff" >
+
+         <TextView
+             android:id="@+id/user_info_car_engineTxt"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="6dip"
+             android:layout_marginTop="6dip"
+             android:text="发动机号"
+             android:textColor="#ff222222"
+             android:textSize="18.0dip" />
+
+         <EditText
+             android:id="@+id/user_info_car_engineExt"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_toRightOf="@+id/user_info_car_engineTxt"
+             android:ellipsize="end"
+             android:hint="请输入发动机号，见驾驶证"
+             android:inputType="textPostalAddress"
+             android:textSize="15.0dip" />
+     </RelativeLayout>
+
+</RelativeLayout>

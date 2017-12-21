@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="top_bg_color">#18B4ED</color>
+    <color name="devide_line">#CBCED2</color>
+    <color name="departure">#083f65</color>
+    <color name="transparent">#00000000</color>
+    <color name="select_holit">#0075a9</color>
+    <color name="gold">#b89766</color>
+    <color name="gray">#737373</color>
+    <color name="red">#FF0000</color>
+    <color name="slidemenu_bg">#ff393939</color>
+    <color name="chat_item_bg">#E0E0E0</color>
+    <color name="gray_font">#818181</color>
+    <color name="left_drawer_no_login_tip_text">#ffb8b8b8</color>
+    <color name="left_drawer_user_name">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_normal">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_pressed">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_tip">#fffe3232</color>
+    <color name="left_drawer_item_bg_normal">#ff393939</color>
+    <color name="left_drawer_item_bg_pressed">#ff292929</color>
+    <color name="left_drawer_item_line">#ff272727</color>
+    <color name="left_drawer_offline_line">#ff4bbff6</color>
+    <color name="left_drawer_offline_hint">#ff6699cc</color>
+    <color name="left_drawer_night_mode_text">#ffb8b8b8</color>
+    <color name="list_item_bg_normal">#ffffff</color>
+    <color name="list_item_bg_pressed">#0033FF</color>
+    <color name="setting_item_text">#ff333333</color>
+    
+     <!--AlertDialog覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--AlertDialog窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--AlertDialog标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--AlertDialogAlertDialog消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--AlertDialog线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--AlertDialog取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--AlertDialog高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--AlertDialog普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--AlertDialog点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--AlertDialog actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+</resources>
