@@ -88,16 +88,16 @@
         android:theme="@android:style/Theme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="TjZtGFMMiXKQEQPlXWtkmzDtZjhm3Zph" />
+            android:value="填写你的百度key" />
         <meta-data
             android:name="com.baidu.speech.APP_ID"
-            android:value="8717383" />
+            android:value="填写你的百度key" />
         <meta-data
             android:name="com.baidu.speech.API_KEY"
-            android:value="n9F9Di1NE1yAp0DWEwNe2pFy" />
+            android:value="填写你的百度key" />
         <meta-data
             android:name="com.baidu.speech.SECRET_KEY"
-            android:value="1144afc9eb49919b6dbf3b4b4df06116" />
+            android:value="填写你的key" />
 
         <service
             android:name="com.baidu.speech.VoiceRecognitionService"
